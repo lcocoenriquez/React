@@ -6,15 +6,17 @@ Before coding:
 
 Install Node.js (LTS version recommended): https://nodejs.org
 
-Open VSCode → Install extensions:
+Open **VSCode** → Install extensions:
 
-ES7+ React/Redux/React-Native snippets
+**ES7+ React/Redux/React-Native snippets**
 
-Prettier - Code Formatter
+**Prettier - Code Formatter**
 
 ## 2. Update npm first (since it’s suggesting it)
 
+```
 npm install -g npm@latest
+```
 
 After this, restart your terminal so the update takes effect.
 
@@ -22,7 +24,9 @@ After this, restart your terminal so the update takes effect.
 
 From inside C:\React_Sample1:
 
+```
 npx create-react-app@latest my-app
+```
 
 💡 Adding @latest ensures you get the newest version.
 
@@ -36,11 +40,13 @@ Success! Created my-app at C:\React_Sample1\my-app
 
 ## 5. Enter and run
 
+```
 cd my-app
 
 npm start
+```
 
-This should open your browser at http://localhost:3000 with the default React page.
+This should open your browser at **http://localhost:3000** with the default React page.
 
 ## 6. Learn React with Samples
 
@@ -48,7 +54,7 @@ This should open your browser at http://localhost:3000 with the default React pa
 
 📂 File: src/App.js
 
-```react
+```javascript
 import React from "react";
 
 function App() {
@@ -64,6 +70,7 @@ export default App;
 
 📂 File: src/App.js
 
+```javascript
 import React from "react";
 import Greeting from "./Greeting";
 
@@ -77,9 +84,11 @@ function App() {
 }
 
 export default App;
+```
 
 📂 File: src/Greeting.js
 
+```javascript
 import React from "react";
 
 function Greeting({ name }) {
@@ -87,6 +96,7 @@ function Greeting({ name }) {
 }
 
 export default Greeting;
+```
 
 💡 Feature learned: Props, reusable components.
 
@@ -94,6 +104,7 @@ export default Greeting;
 
 📂 File: src/Counter.js
 
+```javascript
 import React, { useState } from "react";
 
 function Counter() {
@@ -108,6 +119,7 @@ function Counter() {
 }
 
 export default Counter;
+```
 
 💡 Feature learned: useState hook, event handling.
 
@@ -115,7 +127,7 @@ export default Counter;
 
 📂 File: src/Timer.js
 
-```react
+```javascript
 import React, { useState, useEffect } from "react";
 
 function Timer() {
@@ -136,7 +148,7 @@ export default Timer;
 
 ### 6.5. Conditional Rendering
 
-```react
+```javascript
 import React, { useState } from "react";
 
 function LoginControl() {
@@ -159,7 +171,7 @@ export default LoginControl;
 
 ### 6.6. Lists and Keys
 
-```react
+```javascript
 import React from "react";
 
 function TodoList() {
@@ -202,6 +214,6 @@ function App() {
     </div>
   );
 }
-
+```
 export default App;
 ```
