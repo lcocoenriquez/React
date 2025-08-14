@@ -183,7 +183,7 @@ export default TodoList;
 
 📂 File: src/App.js
 
-```react
+```javascript
 import React from "react";
 import Greeting from "./Greeting";
 import Counter from "./Counter";
